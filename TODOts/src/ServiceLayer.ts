@@ -18,11 +18,9 @@ export class ServiceLayer {
 
         fetch(fetchRequest).then((res)=>{
             //res.json() returns a promise of a parsed json object
-            console.log('1');
             return res.json();
         }).then((resObj)=>{
             //Once the object is resolved run the callback with the received object as the parameter
-            console.log('2');
             callback(resObj);
             console.log('Get Success');
         }).catch((ex)=>{
@@ -47,7 +45,6 @@ export class ServiceLayer {
             return res.json();
         }).then((json)=>{
             console.log('Post Success');
-            console.log(json);
         }).catch((ex)=>{
             console.log('Post Request Error');
             console.error(ex)
