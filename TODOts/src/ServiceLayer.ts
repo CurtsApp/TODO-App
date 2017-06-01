@@ -14,7 +14,7 @@ export class ServiceLayer {
             method: 'GET',
             body: null,
         });
-        console.log('here');
+
 
         fetch(fetchRequest).then((res)=>{
             //res.json() returns a promise of a parsed json object
@@ -53,7 +53,7 @@ export class ServiceLayer {
 
     public static httpDeleteAsync(route: string, query: string, callback: (response: Response) => void) {
 
-        console.log(this.URL + route + '?' + query);
+
         let fetchRequest: Request = new Request(this.URL + route + '?' + query, {
             method: 'DELETE',
             body: null,
