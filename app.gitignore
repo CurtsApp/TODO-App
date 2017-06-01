@@ -10,4 +10,6 @@ www/scripts
 .idea/
 .vs
 *.jsproj.user
+express/.idea/workspace.xml
+TODOts/.idea/workspace.xml
 bld
