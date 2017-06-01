@@ -71,6 +71,7 @@ export class SyncPage extends tabris.Page{
                 }
                 this.updateReminderList(reminderList);
             });
+
         }).appendTo(searchBar);
 
         //Layout Composite
@@ -91,8 +92,7 @@ export class SyncPage extends tabris.Page{
             // Sanitize inputs
             if (text !== '') {
 
-                let newReminder = new Reminder(text);
-
+                let newReminder = new Reminder(text).appendTo(this.scrollView);
                 this.uploadReminder(newReminder);
                 reminderCreator.text = '';
 
