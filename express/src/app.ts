@@ -118,6 +118,13 @@ class App {
             console.log('Added reminder to list');
         });
 
+
+        router.get('/proleague/user', (req, res) => {
+
+
+          console.log()
+        };
+
         this.express.use('/', router);
     }
 
