@@ -4,14 +4,20 @@ import {User} from "./User";
  */
 
 export class UserHandler {
-    private static UserList: User[][]; // A list of Pages of Users, Each Page will have 100 Users
+    private static UserList: User[][] = [[],[]]; // A list of Pages of Users, Each Page will have 100 Users
 
 
     public static addUser(user: User) {
-        if(UserHandler.UserList.length === 0 || UserHandler.UserList[UserHandler.UserList.length - 1]) {
+        //If there are no pages in the list,    or      the current page is full
+        if(UserHandler.UserList[0].length === 0 || UserHandler.UserList[1].length === 100) {
             //If current page is full make a new page
+            console.log('Made page');
+            UserHandler.addPage();
         }
 
+        //In the newest page
+        //UserHandler.UserList[UserHandler.UserList[0].length - 1][UserHandler.UserList[1].length - 1] = user;
+        console.log('[' + (UserHandler.UserList[0].length - 1) + '] [' + (UserHandler.UserList[1].length - 1) + ']');
 
     }
 

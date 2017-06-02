@@ -21,6 +21,7 @@ export class ServiceLayer {
             return res.json();
         }).then((resObj)=>{
             //Once the object is resolved run the callback with the received object as the parameter
+            console.log(resObj);
             callback(resObj);
             console.log('Get Success');
         }).catch((ex)=>{
@@ -39,6 +40,8 @@ export class ServiceLayer {
             },
             body: JSON.stringify(data),
         });
+
+        console.log(JSON.stringify(data));
 
         fetch(fetchRequest).then((res)=>{
             callback(res);

@@ -3,7 +3,7 @@
  */
 
 export interface Preferences {
-    friendsList: number[]; // Users can be accessed by ID
+    /*friendsList: number[]; // Users can be accessed by ID
     favoriteColor: string;
-    leagues: number[]; // Leagues can be accessed by ID
+    leagues: number[]; // Leagues can be accessed by ID*/
 }

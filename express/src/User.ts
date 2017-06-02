@@ -6,7 +6,7 @@ import {Preferences} from "./Preferences";
 export interface User {
     name: string;
     id: number; //This number will be used to store users and search for their data.
-    dataJoin: Date;
+    dateCreated: Date;
     password: string;
     preferences: Preferences;
 }

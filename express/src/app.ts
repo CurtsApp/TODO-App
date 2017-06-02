@@ -3,6 +3,7 @@ import * as http from 'http';
 import * as express from 'express';
 import * as bodyParser from 'body-parser';
 import {Reminder} from "./Reminder";
+import {UserHandler} from "./UserHandler";
 
 
 // Creates and configures an ExpressJS web server.
@@ -123,8 +124,9 @@ class App {
 
 
           console.log()
-        };
+        });
 
+        //UserHandler.addUser({name: 'Bill', id: 0, dateCreated: new Date, preferences: {}, password: 'password'});
         this.express.use('/', router);
     }
 
