@@ -8,6 +8,8 @@ bin/
 www/scripts
 /node_modules/
 .idea/
+TODOts/.idea/
+express/.idea/
 .vs
 *.jsproj.user
 bld
