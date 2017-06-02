@@ -23,7 +23,7 @@ export class SyncPage extends tabris.Page{
     }
 
     private createComponents(): void {
-        console.log('Test Ignmore');
+
         //Layout Composite
         let topBox: tabris.Composite = new tabris.Composite({
             left: 32, right: 32, top: 10, height: 100}).appendTo(this);
