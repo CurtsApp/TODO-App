@@ -7,7 +7,7 @@
 bin/
 www/scripts
 /node_modules/
-.idea/
+**.idea/
 .vs
 *.jsproj.user
 express/.idea/
